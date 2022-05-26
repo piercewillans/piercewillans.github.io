@@ -1,0 +1,245 @@
+body {width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 { 
+  font-size: 2em 
+}
+
+/*everything in the body except header and footer*/
+.content-container {
+  display: flex;
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center space-between space-around;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Header*/
+.main-header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 10px;
+  justify-content: space-around;
+  align-items: center;
+   z-index: 3;
+  width: 100%;
+  background-color: #f4f4f4;
+  max-height: 100px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+#header-img {max-width: 200px;
+  padding: 0 10px;
+margin-right: 40%;}
+
+#main-menu {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around, space-between;
+  white-space:nowrap;
+  margin-right: 60%;
+  padding: 0;
+  position: relative; right:80px;
+}
+ul.horizontal{
+margin:0;
+padding:0;
+}
+ul.horizontal li{
+display:block;
+float:left;
+padding:0 10px;
+}
+.main-nav > li {
+  list-style:none;
+  
+}
+
+
+/*Hero*/
+.hero {display: flex; margin:160px auto; margin-bottom: 5px; margin-top: 100px; width:100%; height:300px; overflow:hidden; position: relative;
+  
+}
+
+
+/*Features*/
+.features-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: normal;
+  
+  
+}
+.features-section > div {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.fas.fa-angle-right {
+  margin-right: 20px;
+  color: orange;
+  position: relative;
+  vertical-align: middle;
+  font-size: 45px;
+}
+
+
+
+
+ /*Testimonials*/
+/*Used code originally for photos for testimonials
+Citation:
+Title: Create a CSS Mini Slideshow (No Javascript required)
+Author: Hyde-Design
+Date: 2021
+Availability: https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required*/
+.fling-minislide-quotes {display:flex;
+  width:100%; 
+  height:100px; 
+  overflow:hidden; 
+position:relative; 
+  font-size:1.4em; 
+  background:#EDEDED;
+  border-left:8px solid #78C0A8 ;
+}
+
+.fling-minislide-quotes blockquote{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: fit-content; height: auto;}
+
+@keyframes fling-minislide-quotes {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide-quotes blockquote:nth-child(4){animation-delay:0s;}
+.fling-minislide-quotes blockquote:nth-child(3){animation-delay:5s;}
+.fling-minislide-quotes blockquote:nth-child(2){animation-delay:10s;}
+.fling-minislide-quotes blockquote:nth-child(1){animation-delay:15s;}
+
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+
+/*Pricing Section*/
+.pricing-section {
+  margin-top: 60px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.pricing > .level {
+background-color: #ddd;
+color: black;
+padding-top: 15px;
+padding-right: 0;
+padding-left: 0;
+padding-bottom: 15px;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  
+}
+.level > h2 {
+  padding: 0px;
+  align-items: flex-start;
+}
+
+.list-text {
+  display:flex;
+  flex-direction:column;
+  line-height:1.6;
+}
+
+/*Email*/
+.email-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content:space-around;
+  margin: 10px;
+  gap:12px;
+}
+
+.email {
+  border: 2px solid #cccccc;
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.submit-button {
+  max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #fac802;
+    
+}
+
+.submit-button:hover {
+  background-color:orange;
+}
+
+/*Footer*/
+.footer-container { 
+  display:grid;
+  grid-template-columns: 4fr 4fr 1fr 1fr;
+  grid-template-areas:
+  'footer1 footer2 footer3 footer4';
+  grid-gap: 10px;
+  min-height: 75px;
+  max-height: 100px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+
+}
+.footer1 { grid-area: footer1; }
+.footer2 { display: flex;
+  align-items:center;
+  grid-area: footer2;
+padding-left: 60px;}
+.footer3 { display:flex;
+  align-items: center;
+  grid-area: footer3; }
+.footer4 { display:flex;
+  align-items:center;
+  grid-area: footer4;}
