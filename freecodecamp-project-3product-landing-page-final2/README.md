@@ -1,4 +1,3 @@
-# FreeCodeCamp Project #3 - Product Landing Page Final2
+# FreeCodeCamp Project #3 - Product Landing Page Template by Pierce Willans
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/piercewillans/pen/jOMpaQW](https://codepen.io/piercewillans/pen/jOMpaQW).
-
+A static survey page template created on CodePen.io by Pierce Willans using HTML and CSS. Original URL: [https://codepen.io/piercewillans/pen/jOMpaQW](https://codepen.io/piercewillans/pen/jOMpaQW).
