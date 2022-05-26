@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Pierce Willans</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <header class="header">
+<head><h1 id="title">Language Learning Survey</h1>
+  <p id="description">Please fill out this short survey!</p>
+    </head></header>
+
+  <form id="survey-form"><main><h2 id="form">Sign Up Here</h2>
+    <div class="label-and-field"><label for="name" id="name-label" Label for Name</label>
+      <div class="input-headings"><p>What is Your Name?</p></div>
+      <input type="text" id="name" class="fields" placeholder="John Smith"required></div>
+    <div class="label-and-field"><label for="email" id="email-label" Label for Email</label>
+      <div class="input-headings"><p>What Email Address Can We Contact You At?</p></div>
+      <input type="email" id="email" class="fields" placeholder="JohnSmith@email.com"required></div>
+  <div class="label-and-field"><label for="number" id="number-label" Label for Age</label>
+    <div class="input-headings"><p>How Old Are You?</p></div>
+    <input type="number" id="number" min="10" max="99" class="fields" placeholder="18" required></div>
+  
+  <div class="label-and-field"><label for="dropdown" id="dropdown-label"Label for Dropdown</label>
+    <div class="input-headings"><p>Select Your Learning Preference:</p></div>
+    <select id="dropdown" class="fields" required>
+<option value=”Physical Classroom”>Physical Classroom</option>
+<option value=”Online Learning”>Online learning</option>
+<option value="Private Tutor">Private Tutor</option>
+</option>
+    </select></div>
+    
+    <div class="input-headings"><p>What Language Are You Interested in Learning?</p></div>
+    
+  <div class="radiobuttons"><label>
+    <input id="spanish" type="radio" name="language" class="input-radio" value="spanish">Spanish</label>
+    <label> 
+      <input id="french" type="radio" name="language" class="input-radio" value="french">French</label>
+  <label> 
+      <input id="german" type="radio" name="language" value="german">German</label>
+  <label> 
+    <input id="russian" type="radio" name="language" value="russian">Russian</label></div>
+  
+  
+    <div class="input-headings"><p>Select Your Level of Ability in this Language:</p></div>
+    <label for="dropdown" id="dropdown-label"Label for Ability Level</label><select id="dropdown" class="fields" required>
+<option value=”beginner”>Beginner</option>
+<option value=”intermediate”>Intermediate</option>
+<option value="advanced">Advanced</option>
+</option>
+</select>
+  
+  <div class="input-headings"><p>What motivates you to learn (check all that apply)?</p></div>
+  
+ <div class="checkboxes"><label><input id="passionate" type="checkbox" name="motivation" value="passionate">Passionate about foreign languages/cultures</label></div>
+  <div class="checkboxes"><label><input id="challenge" type="checkbox" name="motivation" value="challenge">I want an intellectual challenge</label></div>
+<div class="checkboxes"><label><input id="job" type="checkbox" name="motivation" value="job">I need to speak a foreign language for my job</label></div>
+<div class="checkboxes"><label><input id="skillset" type="checkbox" name="motivation" value="skillset">Improve my skillset</label></div>
+  <div class="checkboxes"><label><input id="abroad" type="checkbox" name="motivation" value="abroad">I want to move abroad</label></div>
+
+ <p>What is your availability? (check all that apply)?</p>
+  <label><input id="mornings" type="checkbox" name="availability" value="mornings"> Mornings</label>
+  <label><input id="afternoons" type="checkbox" name="availability" value="afternoons"> Afternoons</label>
+<label><input id="evenings" type="checkbox" name="availability" value="evenings">Evenings</label>
+<label><input id="weekdays" type="checkbox" name="availability" value="weekdays">Weekdays</label>
+  <label><input id="weekends" type="checkbox" name="availability" value="weekends">Weekends</label>
+
+  <p>Questions? Comments? Get in touch with us!</p>
+  <textarea
+            id="comments"
+            name="comments"
+            class="comments"
+            placeholder="Enter your comment here..."
+  
+  ></textarea>
+  <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+
+
+</main></form>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
